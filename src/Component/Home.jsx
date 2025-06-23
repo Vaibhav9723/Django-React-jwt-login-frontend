@@ -16,7 +16,7 @@ const Home = () => {
       }
 
       try {
-        const response = await axios.get("http://127.0.0.1:8000/dashboard", {
+        const response = await axios.get("https://django-react-jwt-login.onrender.com/dashboard", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -20,7 +20,7 @@ const Reg = () => {
     }
 
     const regCustomer = async () =>{
-        const response =await axios.post("http://127.0.0.1:8000/create",{
+        const response =await axios.post("https://django-react-jwt-login.onrender.com/create",{
             fullname: formvalue.fullname,
             email: formvalue.email,
             password: formvalue.password

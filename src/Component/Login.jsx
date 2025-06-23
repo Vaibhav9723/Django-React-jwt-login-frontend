@@ -46,7 +46,7 @@ const Login = () => {
 
     const checkuser = async () => {
   try {
-    const response = await axios.post("http://127.0.0.1:8000/loginU", {
+    const response = await axios.post("https://django-react-jwt-login.onrender.com/loginU", {
       username: logindata.username,
       password: logindata.password,
     });
