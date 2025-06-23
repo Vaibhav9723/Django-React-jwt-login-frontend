@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -78,6 +78,7 @@ const Login = () => {
             <input name='password' type="password" value={logindata.password} onChange={getData} />
             <button>Login</button>
         </form>
+        <p>Already have an account? <Link to={'/login'}>Sign In</Link></p>
     </div>
   )
 }

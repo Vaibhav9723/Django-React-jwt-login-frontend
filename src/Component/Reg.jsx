@@ -2,10 +2,11 @@ import React from 'react'
 import { useState } from 'react'
 import './Reg.css'
 import axios from 'axios'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Reg = () => {
 
-    
+    const nav = useNavigate()
     const [formvalue,setformvalue] = useState({
         fullname: '',
         email :'',
@@ -30,6 +31,7 @@ const Reg = () => {
             email :'',
             password: '',   
         })
+        nav('/login')
 
     }
 
@@ -50,6 +52,7 @@ const Reg = () => {
             <input type="password" name='password' value={formvalue.password} onChange={inputChange}/>
             <button>Submit</button>
         </form>
+        <p>Don't have an account? <Link to={'/reg'}>Sign Up</Link></p>
     </div>
   )
 }
