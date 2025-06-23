@@ -1,0 +1,39 @@
+.regform{
+    width: 100%;    
+    height: 100vh;
+    background-image: linear-gradient(rgb(150, 150, 246),rgb(134, 128, 128));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    border-radius: 10px;
+    background-color: rgb(252, 251, 251);
+    color:rgb(52, 51, 51);
+    padding: 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+form input{
+    border-radius: 3px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form button{
+    background-color:rgb(150, 150, 246);
+    border-radius: 3px;
+    font-size: 20px;
+    height: 45px;
+    color:rgb(5, 1, 1);
+
+    font-weight: bold;
+    width: 100%;
+    margin: 20px 0px;
+}
