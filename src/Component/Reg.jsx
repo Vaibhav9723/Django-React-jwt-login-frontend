@@ -51,8 +51,9 @@ const Reg = () => {
             <label>Password</label>
             <input type="password" name='password' value={formvalue.password} onChange={inputChange}/>
             <button>Submit</button>
+        <p>Already have an account? <Link to={'/login'}>Sign In</Link></p>
+
         </form>
-        <p>Don't have an account? <Link to={'/reg'}>Sign Up</Link></p>
     </div>
   )
 }

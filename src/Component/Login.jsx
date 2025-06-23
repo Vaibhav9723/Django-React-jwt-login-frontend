@@ -77,8 +77,8 @@ const Login = () => {
             <label>Password</label>
             <input name='password' type="password" value={logindata.password} onChange={getData} />
             <button>Login</button>
+        <p>Don't have an account? <Link to={'/reg'}>Sign Up</Link></p>
         </form>
-        <p>Already have an account? <Link to={'/login'}>Sign In</Link></p>
     </div>
   )
 }
